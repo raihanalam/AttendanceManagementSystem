@@ -1,0 +1,19 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+    Attendance System | Create Course
+{% endblock %}
+{% block content %}
+    <div class="mid-sec">
+        <div class="container">
+            <form action="" method="post" class="create">
+                {% csrf_token %}
+                <input type="text" name="code" placeholder="Course Code"><br>
+                <input type="text" name="title" placeholder="Course Title"><br>
+                <input type="text" name="season" placeholder="Season"><br>
+                <input type="text" name="key" placeholder="Joining Key"><br>
+                <button type="submit">Create</button><br>
+            </form>
+        </div>
+    </div>
+{% endblock %}

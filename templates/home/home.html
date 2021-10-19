@@ -1,0 +1,27 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+    Attendance System | Home
+{% endblock %}
+{% block content %}
+    <div class="home-sec">
+        <div class="container">
+            {% if user.is_authenticated %}
+                {% for myuser in userData %}
+                    {% if myuser.handle == user.get_username %}
+                        <p>{{myuser.role}} : {{ user.get_username }}</p>
+                        {%if myuser.role == 'Student'%}
+                            <a href="#">Join In A Course</a><br>
+                            <a href="#">Check Attendance</a>
+                        {%elif myuser.role == 'Teacher' %}
+                            <a href="{%url 'createcourse' %}">Create A Course</a><br>
+                            <a href="#">Take Attendance</a>
+                        {%endif%}
+                    {% endif %}
+                {% endfor %}
+            {%else%}
+                Please signin first.
+            {%endif%}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+</head>
+<body>
+{% load static %}
+<div class="header">
+    <div class="row">
+        <a style="color: white; text-decoration: none;" href="{%url 'index'%}">Attendance System</a>
+        <div class="sign">
+            {% if user.is_authenticated %}
+                <a href="{%url 'signout' %}"><button>Signout</button></a>
+            {%else%}
+                <a href="{%url 'signin' %}"><button>Signin</button></a>
+            {%endif%}
+            </div>
+    </div>
+</div>
+
+{% block content %}
+
+{% endblock %}
+
+<div class="footer">
+    <p>Attendance System | © Copyright 2021</p>
+</div>
+
+</body>
+</html>

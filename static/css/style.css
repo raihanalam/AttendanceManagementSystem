@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding:0;
+    font-family: Consolas;
+}
+h1{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+}
+button{
+    height: 30px;
+    width: 80px;
+    color: white;
+    background-color: #0095ff;
+    cursor: pointer;
+    border: 1px solid lightskyblue;
+    margin:10px;
+}
+button:hover{
+    background-color: tomato;
+}
+.header .row{
+    background-color: #481948;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.header .row>a{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.header .row .sign{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer{
+    height: 30px;
+    width: 100%;
+    background-color: rgb(155, 65, 155);
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+.mid-sec{
+    background-image: url(attendance.jpg);
+    height: 580px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:initial;
+}
+.mid-sec .container{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mid-sec .container a{
+    background-color: #481948;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    margin-left: 20px;
+}
+.mid-sec .container a:hover{
+    background-color: tomato;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 580px;
+}
+.container .sign-form{
+    margin-top: 50px;
+    height: 400px;
+    width: 400px;
+    background-color: #6e226e;
+    margin-bottom: 50px;
+    color: white;
+}
+.container .sign-form h3{
+    margin-top: 20px;
+}
+.container .sign-form form{
+    margin-top: 20px;
+    margin-left: 70px;
+
+}
+.container .sign-form form .role{
+    display: flex;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+.container .sign-form form input{
+    height: 25px;
+    width: 250px;
+    margin-bottom: 10px;
+
+}
+.container .sign-form button{
+    width: 253px;
+    margin-left: 0;
+}
+.rad{
+    color: white;
+    display: flex;
+    margin-right: 100px;
+}
+.alert{
+    width: 100%;
+    height: 30px;
+    padding-top: 10px;
+    text-align: center;
+    margin-top: 10px;
+
+
+}
+.error{
+    background-color: rgb(245, 52, 52);
+}
+.success{
+    background-color: rgb(33, 212, 33);
+}
+
+.home-sec .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    align-items: initial;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.home-sec .container p{
+    padding: 15px;
+    width: 20%;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(161, 148, 148);
+}
+.home-sec .container a{
+    background-color: #481948;
+    color: white;
+    font-size: 20px;
+    width: 20%;
+    text-decoration: none;
+    padding: 15px;
+    border-left: 3px solid #0095ff;
+    margin-top: 10px;
+}
+.home-sec .container a:hover{
+    background-color: tomato;
+}
+.mid-sec .container form input{
+    height: 40px;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.mid-sec .container form button{
+    width: 405px;
+    
+}
